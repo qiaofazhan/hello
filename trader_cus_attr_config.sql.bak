@@ -1,0 +1,7 @@
+
+DROP TABLE IF EXISTS `trader_cus_attr_config`;
+CREATE TABLE `trader_cus_attr_config` (
+  `trader_id` bigint(20) NOT NULL COMMENT '商户的trader_id',
+  `attr_json` varchar(100) DEFAULT NULL COMMENT '属性json串',
+  PRIMARY KEY (`trader_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='客户录入属性配置';
